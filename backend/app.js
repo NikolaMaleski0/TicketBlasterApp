@@ -30,6 +30,7 @@ app.get("/events", eventHandler.getAll);
 app.get("/events/:id", eventHandler.getOne);
 app.post("/events", eventHandler.create);
 app.patch("/events/:id", eventHandler.eventHandler.update);
+app.patch("/events/:id", eventHandler.uploadEventPhoto, uploadHandler.update);
 app.delete("/events/:id", eventHandler.delete);
 
 app.listen(process.env.PORT, (err) => {

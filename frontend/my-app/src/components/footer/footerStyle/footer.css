@@ -1,0 +1,39 @@
+#footer {
+    background-color: #000;
+    height: 5rem;
+    margin-top: -3.6rem;
+  }
+  
+  .footer-flex {
+    max-width: 86.7rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-flex-left {
+    margin-top: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .logo-footer {
+    margin-right: 3.42rem;
+    height: 1.714rem;
+  }
+  
+  #footer a {
+    color: #d3d3d3;
+    transition: all ease 0.2s;
+  }
+  
+  #footer a:hover {
+    color: #FF48AB;
+  }
+  
+  #footer .copy-right-text {
+    color: #d3d3d3;
+    margin-top: 1.4rem;
+  }

@@ -1,0 +1,95 @@
+#login {
+    max-width: 86.7rem;
+    margin: 3.57rem auto 16.2rem;
+  }
+  
+  .heading-log-in {
+    font-weight: bold;
+    font-size: 3.14rem;
+    margin-bottom: 4.57rem;
+  }
+  
+  .login-width {
+    width: 25.5rem;
+  }
+  
+  .label-login, .input-login {
+    display: block;
+    margin-top: 0.9rem;
+    font-size: 16px;
+  }
+  
+  .login-label-style {
+    color: #393939;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .login-input-style {
+    width: 25.5rem;
+    height: 3rem;
+    padding: 0 1rem 0 1rem;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 20px;
+  }
+  
+  .flex-login {
+    margin: 2.3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-login a {
+    color: #393939;
+    position: relative;
+    font-size: 18px;
+  }
+  
+  .flex-login .link-forgot {
+    text-decoration: underline;
+  }
+  
+  .flex-login .link-forgot:hover {
+    color: #FF48AB;
+  }
+  
+  .flex-login .log-in-button {
+    width: 9.14rem;
+    height: 3rem;
+    padding: 0.55rem 2rem;
+    border-radius: 20px;
+    border: 1px solid #FF48AB;
+    background-color: #FF48AB;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+  }
+  
+  .flex-login .log-in-button:hover {
+    background-color: #FF269B;
+  }
+  
+  #login .link-dont {
+    margin-top: 2.92rem;
+    padding: 0.5rem 0;
+    height: 3rem;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #393939;
+    text-align: center;
+    border: 2px solid #FF48AB;
+    border-radius: 20px;
+    transition: all ease 0.2s;
+  }
+  
+  #login .link-dont:hover {
+    background-color: #FF48AB;
+    color: #fff;
+  }
+  
+  

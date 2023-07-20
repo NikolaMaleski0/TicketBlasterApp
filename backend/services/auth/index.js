@@ -10,6 +10,11 @@ db.init();
 api.use(express.json());
 api.use(cors());
 
+api.use((req, res, next) => {
+  console.log(req.cookies);
+  next();
+});
+
 api.post("/api/v1/auth/login", auth.login);
 api.post("/api/v1/auth/create-account", auth.signup);
 

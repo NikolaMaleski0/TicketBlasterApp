@@ -1,0 +1,60 @@
+#admin-user {
+    max-width: 86.7rem;
+    margin: 3.57rem auto;
+  }
+  
+  .flex-admin-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-admin-user-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.8rem;
+  }
+  
+  .user-tickets-history {
+    font-size: 3.14rem;
+    font-weight: bold;
+  }
+  
+  .admin-events {
+    font-size: 3.14rem;
+    font-weight: bold;
+  }
+  
+  .create-event-admin-btn {
+    margin-top: 0.5rem;
+    font-size: 1.14rem;
+    color: #fff;
+    background-color: #FF48AB;
+    height: 3rem;
+    width: 10.285rem;
+    padding: .5rem 0 0 1.8rem;
+    border: 2px solid #FF48AB;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+  }
+  
+  .create-event-admin-btn:hover {
+    background-color: #FF269B;
+  }
+  
+  .flex-admin-user-right ul { 
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .flex-admin-user-right ul li a {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .nav-links-events.active {
+    color: #FF48AB;
+  }

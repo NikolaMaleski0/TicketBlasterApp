@@ -1,0 +1,157 @@
+.nav-link-tickets.active {
+    color: #FF48AB
+  }
+  
+  #outlet-tickets-history {
+    margin-top: 2.7rem;
+    position: relative;
+  }
+  
+  .ticket-history-image {
+    width: 18.5rem;
+    height: 11rem;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .outlet-tickets-history-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .outlet-ticket-history-flex {
+    width: 41rem;
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .ticket-history-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  
+  .ticket-history-date {
+    color: #FF48AB;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .ticket-history-details {
+    font-size: 0.9rem;
+    color: #393939;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  
+  .ticket-history-location-button-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .ticket-history-details-location {
+    font-weight: bold;
+  }
+  
+  .tickets-history-button-print {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+    height: 2.3rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+  }
+  
+  .opacity-event { 
+    opacity: 0.3;
+  }
+  
+  /* Popup */
+  
+  .popup-print {
+    width: 38rem;
+    height: 47.3rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 20px 40px #00000029;
+    z-index: 10;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 3.2rem;
+  }
+  
+  .popup-print-image {
+    height: 18.7rem;
+    width: 31.6rem;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .popup-logo-dark {
+    height: 2.8rem;
+    width: 18.2rem;
+    margin-top: 5px;
+  }
+  
+  .image-qr {
+    height: 10rem;
+    object-fit: cover;
+  }
+  
+  .popup-print-flex-bottom-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .popup-print-flex-bottom-inner-left {
+    display: block;
+  }
+  
+  .popup-print-flex-bottom-inner-right {
+    display: block;
+  }
+  
+  .popup-print-flex-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.6rem;
+    margin-bottom: 2.7rem;
+  }
+  
+  .popup-print-title {
+    font-size: 3.14rem;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .popup-print-date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FF48AB;
+  }
+  
+  .popup-print-location {
+    color: #393939;
+    font-weight: bold;
+  }
+  
+  .tickets-history-no-tickets {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }

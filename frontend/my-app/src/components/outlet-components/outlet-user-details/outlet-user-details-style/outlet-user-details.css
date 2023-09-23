@@ -1,0 +1,211 @@
+.nav-link-user-details.active {
+    color: #FF48AB;
+  }
+  
+  #outlet-user-details {
+    max-width: 37.42rem;
+    margin-top: 4.57rem;
+  }
+  
+  .outlet-user-details {
+    width: 100%;
+  }
+  
+  .outlet-user-details-flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
+  }
+  
+  .outlet-user-details-flex .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .outlet-user-details-flex-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.14rem;
+  }
+  
+  .outlet-user-details-image {
+    height: 6.85rem;
+    width: 6.85rem;
+    object-fit: cover;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    margin-right: 3.92rem;
+  }
+  
+  .outlet-user-details-flex-top-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .outlet-user-details-flex-top label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.85rem;
+  }
+  
+  .outlet-user-details-flex-top-inner input {
+    height: 3rem;
+    width: 25.5rem;
+    outline: none;
+    border-radius: 20px;
+    padding: 0 0 0 1rem;
+    border: 1px solid #000;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .outlet-user-details-flex-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 3.285rem;
+  }
+  
+  .outlet-user-details-flex-bottom input[type="file"] {
+    display: none;
+  }
+  
+  .outlet-user-details-flex-bottom-left .label-file {
+    height: 3rem;
+    width: 9.14rem;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #FF48AB;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .outlet-user-details-flex-bottom-left .label-file:hover {
+    color: #fff;
+    background-color: #FF48AB;
+  }
+  
+  .outlet-user-details-flex-bottom-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .outlet-user-details-flex-bottom-right label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.85rem;
+    margin-top: -2.5rem;
+  }
+  
+  .outlet-user-details-flex-bottom-right input[type="email"] {
+    height: 3rem;
+    width: 25.5rem;
+    outline: none;
+    border-radius: 20px;
+    padding: 0 0 0 1rem;
+    border: 1px solid #000;
+    font-size: 1.1rem;
+    margin-top: -0.1rem;
+  }
+  
+  .submit-bottom-form-top{
+    display: inline-block;
+    height: 3rem;
+    width: 9.14rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .outlet-users-password-flex-top { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.57rem;
+  }
+  
+  .outlet-users-password-flex-top-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  
+  .outlet-users-password-toggle-button {
+    width: 16.35rem;
+    height: 3rem;
+    background-color: #FF48AB;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+  
+  .outlet-users-password-flex-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .outlet-users-password-flex-bottom-top {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .outlet-users-password-flex-bottom-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .outlet-users-password-flex-bottom label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.85rem;
+  }
+  
+  .outlet-users-password-flex-bottom input {
+    height: 3rem;
+    width: 17rem;
+    border: 1px solid #000;
+    border-radius: 20px;
+    outline: none;
+    padding: 0 0 0 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 2.56rem;
+  }
+  
+  .submit-bottom-form-bottom {
+    display: inline-block;
+    height: 3rem;
+    width: 9.14rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .form-outlet-users-change-password {
+    position: relative;
+  }
+  
+  .match-password-outlet-details {
+    display: inline-block;
+    position: absolute;
+    top: 6rem;
+    left: 56%;
+    color: #cb0000;
+    font-size: 0.8rem;
+  }

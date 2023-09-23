@@ -1,0 +1,151 @@
+#outlet-users {
+    margin-top: 3.92rem;
+  }
+  
+  .nav-link-users.active {
+    color: #FF48AB;
+  }
+  
+  .users-admin-image { 
+    height: 5.14rem;
+    width: 5.14rem;
+    object-fit: cover;
+    border: 1px solid #eee;
+    border-radius: 50%;
+  }
+  
+  .users-admin-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid #d8d8d8;
+  }
+  
+  .users-admin-flex-left {
+    display: flex;
+    align-items: center;
+    gap: 1.35rem;
+  }
+  
+  .users-admin-name {
+    font-size: 1.285rem;
+    font-weight: bold;
+    color: #393939;
+  }
+  
+  .users-admin-email {
+    color: #A7A7A7;
+  }
+  
+  .users-admin-flex-right {
+    display: flex;
+    gap: 1.35rem;
+  }
+  
+  .users-admin-make-btn,
+  .users-admin-delete-btn,.users-admin-make-user-btn {
+    width: 9.14rem;
+    height: 3rem;
+    border-radius: 20px;
+    font-size: 1.142rem;
+  }
+  
+  .users-admin-make-btn {
+    border: 2px solid #000;
+    color: #FF48AB;
+    padding: 0.5rem 0 0 1.2rem;
+  }
+  
+  .users-admin-delete-btn {
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 0 0 1.4rem;
+  }
+  
+  .users-admin-make-user-btn {
+    border: 2px solid #FF48AB;
+    color: #000;
+    padding: 0.5rem 0 0 1.6rem;
+  }
+  
+  .popup-admin-make-admin,
+  .popup-admin-delete-user,
+  .popup-admin-make-user {
+    display: block;
+    position: fixed;
+    padding: 2.85rem;
+    width: 52.7rem;
+    height: 19.85rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px #00000029;
+  }
+  
+  .popup-admin-title-make-admin,
+  .popup-admin-title-delete-user,
+  .popup-admin-title-make-user {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .popup-admin-text-make-admin,
+  .popup-admin-text-delete-user,
+  .popup-admin-text-make-user {
+    font-size: 1.2rem;
+    margin-bottom: 4.2rem;
+  }
+  
+  .popup-admin-flex-make-admin,
+  .popup-admin-flex-delete-user,
+  .popup-admin-flex-make-user {
+    display: flex;
+    gap: 1.35rem;
+    margin-left: 50%;
+  }
+  
+  .popup-cancel-make-admin,
+  .popup-cancel-delete-user,
+  .popup-cancel-make-user,
+  .popup-make-admin-btn,
+  .popup-delete-user-btn,
+  .popup-make-user-btn {
+    font-size: 1.14rem;
+    height: 3rem;
+  }
+  
+  .popup-cancel-make-admin,
+  .popup-cancel-delete-user,
+  .popup-cancel-make-user {
+    width: 9.14rem;
+    border: 2px solid #000;
+    border-radius: 20px;
+    color: #000;
+    padding: 0.6rem 0 0 2.6rem;
+  }
+  
+  
+  .popup-make-admin-btn,
+  .popup-delete-user-btn,
+  .popup-make-user-btn {
+    background-color: #000;
+    color: #fff;
+    width: 13.142rem;
+    border-radius: 20px;
+    padding: 0.6rem 0 0 3.5rem;
+  }
+  
+  .popup-make-admin-btn {
+    padding: 0.6rem 0 0 2.3rem;
+  }
+  
+  .popup-make-user-btn {
+    padding: 0.6rem 0 0 2.5rem;
+  }

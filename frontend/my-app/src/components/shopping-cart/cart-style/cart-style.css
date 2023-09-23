@@ -1,0 +1,15 @@
+#shopping-cart {
+    max-width: 86.7rem;
+    margin: 3.57rem auto;
+  }
+  .shopping-cart-empty {
+    font-size: 1.2rem;
+    margin: 2rem 0 0 2rem;
+  }
+  
+  .cart-current-tickets-images {
+    width: 14rem;
+    height: 8.3rem;
+    object-fit: cover;
+    border-radius: 20px;
+  }

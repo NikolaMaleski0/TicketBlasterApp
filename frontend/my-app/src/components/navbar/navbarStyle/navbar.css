@@ -1,118 +1,118 @@
 #header { 
-    background-color: #000;
-    height: 5rem;
-  }
-  
-  .header-flex {
-    max-width: 86.7rem;
-    margin:  0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .left-side-flex {
-    margin-top: 1.4rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .left-side-flex ul {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
-  
-  ul li a {
-    color: #D3D3D3;
-  }
-  
-  .logo {
-    margin-right: 3.42rem;
-    height: 24px;
-  }
-  
-  .right-side-flex {
-    margin-top: 0.9rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .right-side-flex ul {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .style-hover {
-    color: #D3D3D3;
-    transition: all ease 0.2s;
-  }
-  
-  .style-hover:hover {
-    color: #FF48AB;
-  }
-  
-  .search-bar {
-    padding: 1.1rem .8rem .8rem 1.2rem;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    width: 21.071rem;
-    height: 3rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  .log-in {
-    display: inline-block;
-    font-size: 1.142rem;
-    border-radius: 20px;
-    border: 1px solid #FF48AB;
-    background-color: #FF48AB;
-    color: #000;
-    font-weight: bold; 
-    height: 3rem;
-    width: 7.285rem;
-    padding-top: .5rem;
-    transition: all ease 0.2s;
-  }
-  
-  .log-in:hover {
-    background-color: #FF269B;
-    color: #fff;
-  }
-  
-  .create-account {
-    display: inline-block;
-    border: 1px solid #FF48AB;
-    border-radius: 20px;
-    background-color: #000B;
-    color: #fff;
-    font-size: 1.142rem;
-    height: 3rem;
-    width: 11.142rem;
-    padding-top: .5rem; 
-    transition: all ease 0.2s;
-  }
-  
-  .create-account:hover {
-    background-color: #FF48AB;
-    color: #000;
-  }
-  
-  .search-bar,
-  .log-in {
-    margin-right: .7rem
-  }
-  
-  ul li i {
-    margin-left: 1.2rem;
-    color: #FF48AB;
-  }
+  background-color: #000;
+  height: 5rem;
+}
+
+.header-flex {
+  max-width: 86.7rem;
+  margin:  0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side-flex {
+  margin-top: 1.4rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.left-side-flex ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+ul li a {
+  color: #D3D3D3;
+}
+
+.logo {
+  margin-right: 3.42rem;
+  height: 24px;
+}
+
+.right-side-flex {
+  margin-top: 0.9rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.right-side-flex ul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.search-bar {
+  padding: 1.1rem .8rem .8rem 1.2rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 21.071rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.log-in {
+  display: inline-block;
+  font-size: 1.142rem;
+  border-radius: 20px;
+  border: 1px solid #FF48AB;
+  background-color: #FF48AB;
+  color: #000;
+  font-weight: bold; 
+  height: 3rem;
+  width: 7.285rem;
+  padding-top: .5rem;
+  transition: all ease 0.2s;
+}
+
+.log-in:hover {
+  background-color: #FF269B;
+  color: #fff;
+}
+
+.create-account {
+  display: inline-block;
+  border: 1px solid #FF48AB;
+  border-radius: 20px;
+  background-color: #000B;
+  color: #fff;
+  font-size: 1.142rem;
+  height: 3rem;
+  width: 11.142rem;
+  padding-top: .5rem; 
+  transition: all ease 0.2s;
+}
+
+.create-account:hover {
+  background-color: #FF48AB;
+  color: #000;
+}
+
+.search-bar,
+.log-in {
+  margin-right: .7rem
+}
+
+ul li .cart {
+  margin: 0 1.9rem 0 1.6rem;
+}
+
+ul li i {
+  color: #FF48AB;
+}
+
+
+.concerts.active,
+.stand-up.active {
+  color: #FF48AB;
+}

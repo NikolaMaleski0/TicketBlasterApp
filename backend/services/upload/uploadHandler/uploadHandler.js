@@ -5,7 +5,7 @@ const imageId = uuid.v4();
 
 const multerStorage = multer.diskStorage({
   destination: (req, file, callback) => {
-    callback(null, `${__dirname}/../../../public/images/${req.params.storage}`)
+    callback(null, `${__dirname}/../../../public/images`);
   },  filename: (req, file, callback) => {
     const type = file.mimetype.split('/')[1];
     callback(null, `image-${imageId}-${Date.now()}.${type}`);

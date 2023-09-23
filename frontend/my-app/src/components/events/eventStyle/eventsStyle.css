@@ -1,171 +1,166 @@
 .events-hero {
-    max-width: 86.7rem;
-    margin: 3.57rem auto;
-  }
-  
-  .event-hero-content {
-    width: 100%;
-    position: relative;
-  }
-  
-  .image-hero {
-    width: 100%;
-    height: 33.142rem;
-    border-radius: 30px;
-    object-fit: cover;
-    position: relative;
-  }
-  
-  .inside-hero-img-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3.57rem;
-    position: absolute;
-    top: 60%;
-  }
-  
-  .inside-hero-img-left {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .inside-hero-img-left-flex {
-    display: flex;
-  }
-  
-  .inside-hero-img-left .hero-heading {
-    font-size: 2.857rem;
-    color: #fff;
-  }
-  
-  .inside-hero-img-left-flex p {
-    font-size: 2rem;
-    color: #fff;
-    opacity: 70%;
-  }
-  
-  .inside-hero-img-left-flex .hero-date {
-    display: inline-block;
-    margin-right: 5px;
-  }
-  
-  .inside-hero-img-right .get-tickets-btn-hero {
-    display: inline-block;
-    font-size: 1.3rem;
-    padding: 0.5rem 0 1.8rem 2.5rem;
-    font-weight: bold;
-    width: 12rem;
-    height: 3.07rem;
-    background-color: #fff;
-    color: #000;
-    border-radius: 20px;
-    border: 2px solid #fff;
-    position: absolute;
-    left: 186%;
-    transition: all ease 0.2s;
-  }
-  
-  .inside-hero-img-right .get-tickets-btn-hero:hover {
-    border: 2px solid #FF48AB;
-  }
-  
-  /* EVENTS-MUSICAL-CONCERTS */
-  
-  .events-main {
-    max-width: 86.7rem;
-    margin: 3.57rem auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .events-heading {
-    font-size: 2.367rem;
-    font-weight: bold;
-    margin-bottom: 2.071rem;
-  }
-  
-  .event-image {
-    width: 18.5rem;
-    height: 10.9rem;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-  
-  .event-flex {
-    max-width: 40.928rem;
-    display: flex;
-    gap: 1.2rem;
-    margin-bottom: 3.42rem;
-  }
-  
-  .event-location-tickets-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .event-name {
-    font-size: 1.71rem;
-    font-weight: bold;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  .event-date {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color:#FF48AB;
-    margin-bottom: 2px;
-  }
-  
-  .event-details {
-    font-size: 0.9rem;
-    color: #393939;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
-  }
-  
-  .event-location-link {
-    display: inline-block;
-    font-size: 1rem;
-    color: #fff;
-    width: 9.14rem;
-    height: 2.3rem;
-    padding: 0.2rem 0 1rem 1.8rem;
-    background-color: #000;
-    border-radius: 20px;
-    border: 2px solid #000;
-    transition: all ease 0.2s;
-  }
-  
-  .event-location-link:hover {
-    border: 2px solid #FF48AB;
-  }
-  
-  .link-to-all-events {
-    display: block;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #000;
-    padding-top: 0.5rem;
-    height: 3rem;
-    width: 100%;
-    border: 1px solid #000;
-    border-radius: 20px;
-    margin: 6.5rem 0 6.5rem 0;
-    transition: all ease 0.2s;
-  }
-  
-  .link-to-all-events:hover {
-    background-color: #FF48AB;
-    color: #fff;
-  }
+  max-width: 86.7rem;
+  margin: 3.57rem auto;
+  position: relative;
+}
+
+.event-hero-content {
+  width: 100%;
+  position: relative;
+}
+
+.image-hero {
+  width: 100%;
+  height: 33.142rem;
+  border-radius: 30px;
+  object-fit: cover;
+  position: relative;
+}
+
+.hero-heading {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+
+.inside-hero-img-content {
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 3.57rem 3.57rem;
+}
+
+.inside-hero-img-content-flex {
+  display: flex;
+}
+
+.hero-date,
+.hero-location {
+  color: #fff;
+  opacity: 70%;
+  font-size: 2rem;
+}
+
+.hero-location {
+  margin-left: 0.3rem;
+}
+
+.get-tickets-btn-hero {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 0.5rem 0 1.8rem 2.5rem;
+  font-weight: bold;
+  width: 12rem;
+  height: 3.07rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  transition: all ease 0.2s;
+  position: absolute;
+  bottom: 3.57rem;
+  right: 3.57rem;
+}
+
+.get-tickets-btn-hero:hover {
+  border: 2px solid #FF48AB;
+}
+
+/* EVENTS-MUSICAL-CONCERTS */
+
+.events-main {
+  max-width: 86.7rem;
+  margin: 3.57rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.events-heading {
+  font-size: 2.367rem;
+  font-weight: bold;
+  margin-bottom: 2.071rem;
+}
+
+.event-image {
+  width: 18.5rem;
+  height: 10.9rem;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.event-flex {
+  max-width: 40.928rem;
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 3.42rem;
+}
+
+.event-location-tickets-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.event-name {
+  font-size: 1.71rem;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-date {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color:#FF48AB;
+  margin-bottom: 2px;
+}
+
+.event-details {
+  font-size: 0.9rem;
+  color: #393939;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.event-location-link {
+  display: inline-block;
+  font-size: 1rem;
+  color: #fff;
+  width: 9.14rem;
+  height: 2.3rem;
+  padding: 0.2rem 0 1rem 1.8rem;
+  background-color: #000;
+  border-radius: 20px;
+  border: 2px solid #000;
+  transition: all ease 0.2s;
+}
+
+.event-location-link:hover {
+  border: 2px solid #FF48AB;
+}
+
+.link-to-all-events {
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #000;
+  padding-top: 0.5rem;
+  height: 3rem;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 20px;
+  margin: 6.5rem 0 6.5rem 0;
+  transition: all ease 0.2s;
+}
+
+.link-to-all-events:hover {
+  background-color: #FF48AB;
+  color: #fff;
+}

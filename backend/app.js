@@ -5,6 +5,11 @@ const cookieParser = require("cookie-parser");
 
 const db = require("./pkg/db/index");
 const auth = require("./services/auth/handlers/authHandler");
+const ecommerce = require("./services/ecommerce/ecommerceHandler/ecommerceHandler");
+const events = require("./services/events/eventHandler/eventHandler");
+const users = require("./services/users/handlers/userHandler");
+const upload = require("./services/upload/uploadHandler/uploadHandler");
+const proxy = require("./services/proxy/index");
 
 const app = express();
 app.use(cookieParser());

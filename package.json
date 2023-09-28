@@ -1,0 +1,36 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"nodemon ./services/auth/index.js\" \"nodemon ./services/events/index.js\" \"nodemon ./services/upload/index.js\" \"nodemon ./services/users/index.js\" \"nodemon ./services/ecommerce/index.js\" \"nodemon ./services/proxy/index.js\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikolaMaleski0/TicketBlasterApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikolaMaleski0/TicketBlasterApp/issues"
+  },
+  "homepage": "https://github.com/NikolaMaleski0/TicketBlasterApp#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express-http-proxy": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.1",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

@@ -10,8 +10,6 @@ export const Navbar = () => {
   const navigate = useNavigate();
   const [query, setQuery] = useState('');
 
-
-
   const handleSearchBarKeyDown = (e) => {
     if (e.key === 'Enter') {
       navigate('/events');
@@ -24,15 +22,13 @@ export const Navbar = () => {
       <div className="header-flex">
         <div className="left-side-flex">
             <ul>
-              <li>
-                <NavLink 
+              <NavLink 
                   to='/' >
                     <img 
                       src={logo} 
                       alt="logo" 
                       className="logo" />
                 </NavLink>
-              </li>
               <li>
                 <NavLink 
                   to='/musical-concerts'
@@ -75,6 +71,7 @@ export const Navbar = () => {
             )}
           </ul>
         </div>
+
       </div>
     </div>
   )

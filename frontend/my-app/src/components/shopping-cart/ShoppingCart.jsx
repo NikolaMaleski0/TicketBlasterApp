@@ -1,17 +1,21 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../../Context/AuthContext';
+import { Link } from 'react-router-dom';
 import './cart-style/cart-style.css';
 import axios from 'axios';
 
 export const ShoppingCart = () => {
   const [addedTickets, setAddedTickets] = useState([]);
   const { userId } = useContext(AuthContext);  
+  const [ticketId, setTicketId] = useState('');
 
   const currentTickets = async () => {
     try {
       const response = await axios.get(`/api/v1/ecommerce/get-tickets-user/${userId}`);
       setAddedTickets(response.data.data.ticket.tickets)
-      console.log(response);
+      // console.log(response);
+      setTicketId(response.data.data.ticket._id);
+      
       
     } catch(err) {  
       console.log(err);
@@ -19,23 +23,24 @@ export const ShoppingCart = () => {
   };
 
   const removeEventFromCart = async (ticketId, eventToRemoveId) => {
-    console.log(ticketId);
-    console.log(eventToRemoveId);
+    // console.log(ticketId);
+    // console.log(eventToRemoveId);
     try {
       const response = await axios.delete(`api/v1/ecommerce/delete-event-from-cart/${ticketId}/${eventToRemoveId}`);
       console.log(response);
+      window.location.reload();
     } catch(err) {
       console.log(err);
     }
-  }
+  };
 
   const calculateTotalPrice = (ticket) => {
     const quantity = ticket.quantity;
-    const price = ticket.event.price || '0';
+    const price = ticket.event.price;
     const priceSplited = price.split('$');
-    const priceNumber = Number(priceSplited[1]);;
+    const priceNumber = Number(priceSplited[1]);
     return quantity * priceNumber;
-  }
+  };
 
   useEffect(() => {
     currentTickets();
@@ -50,6 +55,7 @@ export const ShoppingCart = () => {
         <div className="cart-current-tickets">
         {addedTickets.map((ticket, i) =>{
           const totalPrice = calculateTotalPrice(ticket);
+          // console.log(ticket);
           return (
             <div className="cart-current-tickets-flex" key={i}>
               <div className="cart-current-tickets-flex-left">
@@ -74,8 +80,9 @@ export const ShoppingCart = () => {
                 <p className="cart-current-tickets-total-price">${totalPrice.toFixed(2)} USD</p>
                 <p className="cart-current-tickets-quantity">{ticket.quantity} x {ticket.event.price} USD</p>
                 <button 
+                  type="button"
                   className="cart-current-remove-ticket-button" 
-                  onClick={() => removeEventFromCart(ticket._id)}
+                  onClick={() => removeEventFromCart(ticketId, ticket.event._id)}
                   >
                     Remove
                   </button>
@@ -85,9 +92,17 @@ export const ShoppingCart = () => {
         })
         }
       </div>
-      
       )}
-      
+      <div className="checkout-back-buttons-flex">
+        <div className="back-button-container">
+          <Link to='/' className="back-button">Back</Link>
+        </div>
+        {addedTickets.length > 0 && (
+          <div className="checkout-button-container">
+            <Link to='/checkout' className="checkout-button">Checkout</Link>
+          </div>
+        )}
+      </div>
     </div>
   )
 }

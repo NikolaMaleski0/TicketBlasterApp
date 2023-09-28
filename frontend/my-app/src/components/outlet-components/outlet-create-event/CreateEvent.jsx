@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './outlet-create-event-style/create-event.css';
-import axios from 'axios';
+
 
 export const CreateEvent = () =>  {
   const [previewImage, setPreviewImage] = useState(null);
@@ -44,20 +45,6 @@ export const CreateEvent = () =>  {
     setEventData({...eventData, location: e.target.value});
   };
 
-  // const handleAddEvent = () => {
-  //   if (selectedEventToAdd) {
-  //     if (relatedEvents.length < 2) {
-  //       if (!relatedEvents.find((event) => event._id === selectedEventToAdd._id)) {
-  //         setRelatedEvents([...relatedEvents, selectedEventToAdd]);
-  //         setEventData({
-  //           ...eventData,
-  //           relatedActs: [...eventData.relatedActs, selectedEventToAdd._id]
-  //         });
-  //       } 
-  //     }
-  //   }
-  // };
-
   const handleAddEvent = () => {
     if (!selectedEventToAdd || relatedEvents.length >= 2) return;
 
@@ -74,7 +61,7 @@ export const CreateEvent = () =>  {
         ...prevEventData.relatedActs,
         eventIdToAdd,
       ].filter((id) => typeof id === 'string')
-    }))
+    }));
   };
 
 

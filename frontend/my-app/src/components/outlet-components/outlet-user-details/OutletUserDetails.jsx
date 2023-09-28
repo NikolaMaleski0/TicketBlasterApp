@@ -9,13 +9,12 @@ export const OutletUserDetails = () => {
   const [newImage, setNewImage] = useState('');
   const [newName, setNewName] = useState('');
   const [newEmail, setNewEmail] = useState('');
-  const [isDefaultImg, setIsDefaultImg] = useState(true);
   const [password, setPassword] = useState('');
   const [reTypePassword, setReTypePassword] = useState('');
 
   const { userDefaultImg, userName, updateDefaultImg, userId } = useContext(AuthContext);
 
-  console.log(userId);
+  // console.log(userId);
 
   const imageChange = (e) => {
     setNewImage(e.target.files[0]);
@@ -28,8 +27,6 @@ export const OutletUserDetails = () => {
   const emailChange = (e) => {
     setNewEmail(e.target.value);
   };
-
-
   
   const newUserDataUpload = async () => {
     try {
@@ -51,7 +48,6 @@ export const OutletUserDetails = () => {
         if (response.status === 204) {
           if (formData.has('image')) {
             updateDefaultImg(response.data.image, false);
-            setIsDefaultImg(false);
           }
         }
       }
@@ -83,11 +79,18 @@ export const OutletUserDetails = () => {
         <div className="outlet-user-details-flex">
           <form className="form">
             <div className="outlet-user-details-flex-top">
-              <img 
-              className="outlet-user-details-image" 
-              src={isDefaultImg ? `/images/${userDefaultImg}` : `/${userDefaultImg}` }
-              alt={userName}
-              />
+              {userDefaultImg === 'user-default.jpg' ? (
+                <img 
+                className="outlet-user-details-image" 
+                src={`/${userDefaultImg}`}
+                alt={userName}/>
+              ) : (
+                <img 
+                className="outlet-user-details-image" 
+                src={`/images/${userDefaultImg}` }
+                alt={userName}
+                />
+              )}
               <div className="outlet-user-details-flex-top-inner">
                 <label htmlFor="name">Full Name</label>
                 <input 

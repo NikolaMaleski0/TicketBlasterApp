@@ -13,7 +13,7 @@ export const SearchEvents = () => {
     try {
       const response = await axios.get('/api/v1/event/get-all-events');
       const allEvents = response.data.data.event;
-      console.log(response);
+      // console.log(response); 
 
       const filteredEvents = allEvents.filter(event => {
         return (
@@ -24,7 +24,7 @@ export const SearchEvents = () => {
       });
 
       setEvents(filteredEvents);
-      console.log(filteredEvents);
+      // console.log(filteredEvents);
 
       localStorage.setItem('searchQuery', searchQuery);
 
@@ -59,7 +59,13 @@ export const SearchEvents = () => {
                   <div className="search-event-flex-inner-left">
                     <p className="search-event-name">{event.name}</p>
                     <p className="search-event-details">{event.eventDetails}</p>
-                    <p className="search-event-date">{event.date}</p>
+                    <p className="search-event-date">
+                      {new Date(event.date).toLocaleDateString('en-US', {
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric'
+                        })}
+                    </p>
                     <p className="search-event-location">{event.location}</p>
                   </div>
                   <div className="search-event-flex-inner-right">

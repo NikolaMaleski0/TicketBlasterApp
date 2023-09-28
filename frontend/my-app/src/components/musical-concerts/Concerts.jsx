@@ -12,7 +12,7 @@ export const Concerts = () => {
     try {
       const response = await axios.get('/api/v1/event/get-all-events');
       setConcerts(response.data.data.event);
-      console.log(response);
+      // console.log(response);
       
     } catch(err) {
       console.log(err);

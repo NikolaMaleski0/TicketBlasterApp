@@ -18,7 +18,7 @@ export const Event = () => {
       const response = await axios.get(`/api/v1/event/get-one-event/${id}`);
       setEvent(response.data.data.event);
       setCategory(response.data.data.event.category)
-      // console.log(response);
+       console.log(response);
     } catch(err) {
       console.log(err);
     }
@@ -28,28 +28,28 @@ export const Event = () => {
 
   const addToCart = async () => {
     try {
-      const quantityInput = document.getElementById('count');
-      const quantity = quantityInput.value;
-      console.log(quantity);
+      let quantityInput = document.getElementById('count');
+      let quantity = quantityInput.value;
+       console.log(quantity);
+
+      if (!quantity || quantity <= 0) {
+        quantity = 1;
+        quantityInput.value = quantity
+      }
 
       const response = await axios.post('/api/v1/ecommerce/add-ticket', {
         user: userId,
         tickets: [{ event: id, quantity }]
       });
       console.log(response);
-
-      if (response.data.status === 'Success') {
-        console.log('cart updated succesfully');
-      } else {
-        console.error('Api error:', response.data.message);
-      }
+      navigate('/shopping-cart');
 
     } catch (err) {
       console.log(err);
     }
   };
 
-  // console.log('related events:', event.relatedActs);
+   console.log('related events:', event.relatedActs);
 
   useEffect(() => {
     if (id) {
@@ -140,7 +140,7 @@ export const Event = () => {
       <div className="related-events-flex">
         {event.relatedActs &&
           event.relatedActs.map((relatedEvents, i) => {
-            // console.log('related events:', relatedEvents);
+             console.log('related events:', relatedEvents);
             return(
               <div key={i} className="related-acts-flex">
                 <div className="relaed-acts-flex-left">

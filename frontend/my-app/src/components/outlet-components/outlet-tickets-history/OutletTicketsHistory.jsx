@@ -24,9 +24,9 @@ export const OutletTicketsHistory = () => {
 
   const getAllTickets = async () => {
     try {
-      const response = await axios.get(`/api/v1/ecommerce/get-tickets-user/${userId}`);
-      setTickets(response.data.data.ticket.tickets);
-      console.log(response);
+      const response = await axios.get(`/api/v1/ecommerce/get-all-user-tickets-history/${userId}`);
+      setTickets(response.data.data.findAllTickets.historyTickets);
+      // console.log(response);
     } catch(err) {
       console.log(err);
     }
@@ -47,19 +47,19 @@ export const OutletTicketsHistory = () => {
             const ticketAddClass = isOutdated ? 'outlet-ticket-history-flex opacity-event' : 'outlet-ticket-history-flex'
             return(
               <div className="outlet-ticket-history-flex" key={i}>
-                <img src={`/images/${ticket.image}`} alt={ticket.name} className="ticket-history-image" />
+                <img src={`/images/${ticket.event.image}`} alt={ticket.event.name} className="ticket-history-image" />
                 <div className="ticket-history-inner-flex">
-                  <h2 className="ticket-history-title">{ticket.name}</h2>
+                  <h2 className="ticket-history-title">{ticket.event.name}</h2>
                   <p className="ticket-history-date">
-                    {new Date(ticket.date).toLocaleDateString('en-US', {
+                    {new Date(ticket.event.date).toLocaleDateString('en-US', {
                       year: 'numeric',
                       month: 'long',
                       day: 'numeric'
                     })},
                   </p>
-                  <p className="ticket-history-details">{ticket.eventDetails}</p>
+                  <p className="ticket-history-details">{ticket.event.eventDetails}</p>
                   <div className="ticket-history-location-button-flex">
-                    <p className="ticket-history-details-location">{ticket.location}</p>
+                    <p className="ticket-history-details-location">{ticket.event.location}</p>
                     <Link 
                       className="tickets-history-button-print" 
                       onClick={() => {
@@ -85,21 +85,21 @@ export const OutletTicketsHistory = () => {
                 <img src={logoDark} alt="logo-dark"  className="popup-logo-dark"/>
               </div>
               <div>
-                <img src={`/images/${popupDetailsPrint.image}`} alt={popupDetailsPrint.name} className="popup-print-image" />
+                <img src={`/images/${popupDetailsPrint.event.image}`} alt={popupDetailsPrint.event.name} className="popup-print-image" />
               </div>
             </div>
             <div className="popup-print-flex-bottom">
               <div className="popup-print-flex-bottom-inner">
                 <div className="popup-print-flex-bottom-inner-left">
-                  <p className="popup-print-title">{popupDetailsPrint.name}</p>
+                  <p className="popup-print-title">{popupDetailsPrint.event.name}</p>
                   <p className="popup-print-date">
-                    {new Date(popupDetailsPrint.date).toLocaleDateString('en-US', {
+                    {new Date(popupDetailsPrint.event.date).toLocaleDateString('en-US', {
                         year: 'numeric',
                         month: 'long',
                         day: 'numeric'
                       })}
                   </p>
-                  <p className="popup-print-location">{popupDetailsPrint.location}</p>
+                  <p className="popup-print-location">{popupDetailsPrint.event.location}</p>
                 </div>
                 <img src={qrImg} alt="qr-code" className="image-qr" />
               </div>

@@ -1,15 +1,133 @@
 #shopping-cart {
-    max-width: 86.7rem;
-    margin: 3.57rem auto;
-  }
-  .shopping-cart-empty {
-    font-size: 1.2rem;
-    margin: 2rem 0 0 2rem;
-  }
-  
-  .cart-current-tickets-images {
-    width: 14rem;
-    height: 8.3rem;
-    object-fit: cover;
-    border-radius: 20px;
-  }
+  max-width: 86.7rem;
+  margin: 3.57rem auto;
+}
+.shopping-cart-empty {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 2rem 0 0 2rem;
+  margin-bottom: 41.2rem;
+}
+
+.shopping-card-title {
+  font-size: 3.14rem;
+  font-weight: bold;
+  margin-bottom: .7rem;
+}
+
+.cart-current-tickets-images {
+  width: 14rem;
+  height: 8.3rem;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.cart-current-tickets-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.cart-current-tickets {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 34rem;
+}
+
+.cart-current-tickets-flex-left-inner {
+  display: flex;
+  align-items: center;
+  gap: 3.3rem;
+}
+
+.cart-current-tickets-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.cart-current-tickets-date {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FF48AB;
+}
+
+.cart-current-tickets-location {
+  color: #393939;
+  font-weight: bold;
+}
+
+.cart-current-tickets-flex-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-current-tickets-total-price {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.cart-current-tickets-quantity {
+  font-weight: 1.2rem;
+  font-weight: bold;
+  color: #FF48AB;
+  margin-bottom: 15px;
+}
+
+.cart-current-remove-ticket-button {
+  width: 9rem;
+  height: 2.3rem;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cart-current-remove-ticket-button:hover {
+  border: 2px solid #FF48AB;
+}
+
+.checkout-back-buttons-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.back-button,
+.checkout-button {
+  width: 16rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  transition: all 0.2s ease;
+}
+
+.back-button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  border: 2px solid #000
+}
+
+.back-button:hover {
+  border: 2px solid #FF48AB;
+}
+
+.checkout-button {
+  background-color: #FF48AB;
+  color: #fff;
+  border-radius: 20px;
+  border: 2px solid #FF48AB;
+}
+
+.checkout-button:hover {
+  background-color: #FF269B;
+}

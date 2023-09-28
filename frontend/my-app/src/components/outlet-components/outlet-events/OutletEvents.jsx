@@ -24,14 +24,11 @@ export const OutletEvents = () => {
 
   const deleteEvent = async () => {
     try {
-      if (!selectedEvent) {
-        console.log('no selected event');
-        return;
-      };
-      console.log('selected event:', selectedEvent);
+
+      // console.log('selected event:', selectedEvent); 
 
       const response = await axios.delete(`/api/v1/event/delete-event/${selectedEvent}`);
-      console.log(response);
+      // console.log(response);
       if (response.status === 204) {
         setEvents(prevEvents => prevEvents.filter(event => event._id !== selectedEvent))
         setShowPopUp(false);

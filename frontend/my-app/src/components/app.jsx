@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Login } from './login/login';
-import { createAccount } from './createAccount/createAccount';
-import { Navbar } from './navbar/navbar';
+import { Createaccount } from './create-account/createAccount';
 import { Events } from './events/events';
 import { SearchEvents } from './search-events/SearchEvents';
 import { Concerts } from './musical-concerts/Concerts';
@@ -18,6 +17,9 @@ import { OutletTicketsHistory } from './outlet-components/outlet-tickets-history
 import { ShoppingCart } from './shopping-cart/ShoppingCart';
 import { OutletUserDetails } from './outlet-components/outlet-user-details/OutletUserDetails';
 import { AuthContext } from '../Context/AuthContext';
+import { StandUp } from './stand-up-comedy/StandUp';
+import { Event } from './oneEvent/Event';
+import { Checkout } from './checkout/Checkout';
 
 
 export const App = () => {
@@ -47,6 +49,8 @@ export const App = () => {
             <Route path='user-details' element={<OutletUserDetails/>}></Route>
           </Route>
           <Route path='/shopping-cart' element={<ShoppingCart/>}></Route>
+          <Route path='/checkout' element={<Checkout/>}></Route>
+          <Route path='/purchase-complete' element={<PurchaseComplete/>}></Route>
         </Routes>
       </div>
     </div>

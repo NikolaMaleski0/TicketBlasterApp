@@ -22,18 +22,15 @@ export const OutletUsers = () => {
 
   const promotingDemotingUsers = async () => {
     try {
-      if (!selectedUser) {
-        console.log('no selected user');
-        return;
-      } 
-      console.log('selected user:', selectedUser);
+
+      // console.log('selected user:', selectedUser);
 
       const selectedUserData = users.find(user => user._id === selectedUser);
       const currentRole = selectedUserData.role;
       const newRole = currentRole === 'admin' ? 'user' : 'admin';
 
       const response = await axios.patch(`/api/v1/user/update-user/promote-demote/${selectedUser}`);
-      console.log(response);
+      // console.log(response); 
       setUsers(prevUsers => {
         return prevUsers.map(user => {
           if (user._id === selectedUser) {

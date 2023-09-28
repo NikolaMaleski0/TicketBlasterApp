@@ -1,0 +1,151 @@
+#checkout {
+    max-width: 86.7rem;
+    margin: 3.57rem auto;
+  }
+  
+  .checkout-image {
+    width: 9.7rem;
+    height: 5.7rem;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .checkout-title {
+    font-size: 3.14rem;
+    font-weight: bold;
+    margin-bottom: 3.7rem;
+  }
+  
+  .checkout-flex-content-form {
+    display: flex;
+    gap: 9.7rem;
+  }
+  
+  
+  .checkout-flex-left-inner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .checkout-flex-left-inner-right {
+    max-width: 11rem;
+  }
+  
+  .checkout-flex-ticket-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .checkout-flex-ticket-date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FF48AB;
+  }
+  
+  .checkout-flex-ticket-location {
+    font-weight: bold;
+    color: #393939;
+  }
+  
+  .checkout-flex-left-content {
+    display: flex;
+    align-items: center;
+    gap: 2.7rem;
+    padding-bottom: 1.75rem;
+    margin-bottom: 1.75rem;
+    border-bottom: 1px solid #D8D8D8;
+  }
+  
+  .checkout-flex-total-price {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  
+  .checkout-flex-tickets-quantity {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FF48AB;
+  }
+  
+  .check-out-bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .checkout-total-bottom-price {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  
+  .checkout-total-bottom-total-price {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  
+  .checkout-flex-right {
+    width: 25.5rem;
+  }
+  
+  .checkout-form label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .checkout-form input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 20px;
+    border: 1px solid #000;
+    outline: none;
+    margin-bottom: 16px;
+  }
+  
+  .checkout-buttons-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20rem 0 3rem 0;
+  }
+  
+  .checkout-back-button,
+  .checkout-pay-button {
+    width: 16rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    transition: all 0.2s ease;
+  }
+  
+  .checkout-back-button {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    border: 2px solid #000
+  }
+  
+  .checkout-back-button:hover {
+    border: 2px solid #FF48AB;
+  }
+  
+  .checkout-pay-button {
+    background-color: #FF48AB;
+    color: #fff;
+    border-radius: 20px;
+    border: 2px solid #FF48AB;
+  }
+  
+  .checkout-pay-button {
+    background-color: #FF269B;
+  }

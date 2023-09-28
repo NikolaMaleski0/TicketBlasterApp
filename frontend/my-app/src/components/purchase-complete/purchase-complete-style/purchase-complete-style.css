@@ -1,0 +1,141 @@
+#purchase-complete {
+    max-width: 86.7rem;
+    margin: 3.57rem auto;
+  }
+  
+  .purchase-complete-title {
+    font-size: 3.14rem;
+    font-weight: bold;
+    margin-bottom: 3.7rem;
+  }
+  
+  .purchase-complete-image {
+    width: 9.7rem;
+    height: 5.7rem;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .purchase-complete-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.75rem;
+    margin-bottom: 1.75rem;
+    border-bottom: 1px solid #D8D8D8;
+  }
+  
+  .purchase-complete-flex-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .purchase-complete-event-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  
+  .purchase-complete-event-date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FF48AB;
+  }
+  
+  .purchase-complete-event-location {
+    font-weight: bold;
+    color: #393939;
+  }
+  
+  .purchase-complete-flex-right {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  
+  .purchase-complete-total-price {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  
+  .purchase-complete-tickets-quantity {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FF48AB;
+  }
+  
+  .purchased-item-print {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+    height: 2.3rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* Popup */
+  
+  .purchased-complete-popup {
+    width: 38rem;
+    height: 47.3rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 20px 40px #00000029;
+    z-index: 10;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 3.2rem;
+  }
+  
+  .purchased-complete-popup-image {
+    height: 18.7rem;
+    width: 31.6rem;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .purchased-complete-logo {
+    height: 2.8rem;
+    width: 18.2rem;
+    margin-top: 5px;
+  }
+  
+  .purchased-complete-popup-flex-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.6rem;
+    margin-bottom: 2.7rem;
+  }
+  
+  .purchased-complete-flex-bottom-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .purchased-complete-popup-title {
+    font-size: 3.14rem;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .purchased-complete-popup-date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FF48AB;
+  }
+  
+  .purchased-complete-popup-location {
+    color: #393939;
+    font-weight: bold;
+  }
